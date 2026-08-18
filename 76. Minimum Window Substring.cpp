@@ -1,11 +1,11 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        map<char, int> freq;
-        int left = 0;
-        int right = 0;
-        int minlength = INT_MAX;
-        int count = 0;
+    map<char, int> freq;
+    int left = 0;
+    int right = 0;
+    int minlength = INT_MAX;
+    int count = 0;
         int sIndex = -1;
         for (int i = 0; i < t.size(); i++) {
             freq[t[i]]++;
